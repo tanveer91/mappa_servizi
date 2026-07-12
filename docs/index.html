@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PitSpot — trova fontanelle e bagni pubblici sulla mappa, ovunque tu sia. Presto disponibile su Android." data-i18n-content="meta.description">
+  <title data-i18n-content="meta.title">PitSpot — La mappa per le tue avventure all'aria aperta</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="assets/logo.png" alt="PitSpot" width="40" height="40">
+        <span>PitSpot</span>
+      </a>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="it" aria-pressed="true">IT</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="header-cta" href="#newsletter" data-i18n="header.cta">Avvisami al lancio</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Presto su Android</p>
+          <h1 data-i18n="hero.title">La mappa definitiva per i tuoi viaggi all'aria aperta</h1>
+          <p class="lead" data-i18n="hero.lead">
+            PitSpot ti mostra fontanelle d'acqua potabile e bagni pubblici vicino a te.
+            Perfetta per escursioni, city trip e giornate fuori porta.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <span class="feature-icon water" aria-hidden="true">💧</span>
+              <span data-i18n="hero.feature1">Fontanelle e punti d'acqua nelle vicinanze</span>
+            </li>
+            <li>
+              <span class="feature-icon toilet" aria-hidden="true">🚻</span>
+              <span data-i18n="hero.feature2">Bagni pubblici con dettagli su accessibilità e orari</span>
+            </li>
+            <li>
+              <span class="feature-icon map" aria-hidden="true">📍</span>
+              <span data-i18n="hero.feature3">Ricerca per indirizzo o posizione GPS attuale</span>
+            </li>
+          </ul>
+          <a class="button primary" href="#newsletter" data-i18n="hero.cta">Iscriviti alla lista d'attesa</a>
+        </div>
+
+        <div class="hero-visual" data-i18n-aria-label="hero.visualLabel" aria-label="Anteprima dell'app PitSpot">
+          <div class="phone-frame">
+            <div class="phone-notch" aria-hidden="true"></div>
+            <div class="phone-screen">
+              <img
+                src="assets/screenshot.jpg"
+                alt="Schermata dell'app PitSpot con mappa di Milano, fontanelle e controlli di ricerca"
+                class="app-screenshot"
+                data-i18n-alt="hero.screenshotAlt"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="container newsletter-card">
+        <div class="newsletter-copy">
+          <h2 data-i18n="newsletter.title">Resta aggiornato</h2>
+          <p data-i18n="newsletter.lead">
+            Lascia la tua email per essere avvisato quando l'app sarà disponibile su Android.
+            Nessuno spam: solo una notifica al lancio.
+          </p>
+        </div>
+
+        <form
+          class="signup-form"
+          id="signup-form"
+          action="https://formspree.io/f/xpqvanda"
+          method="POST"
+        >
+          <label class="sr-only" for="email" data-i18n="newsletter.emailLabel">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="la.tua@email.com"
+            data-i18n-placeholder="newsletter.emailPlaceholder"
+            required
+            autocomplete="email"
+          >
+          <button type="submit" class="button primary" data-i18n="newsletter.submit">Avvisami al lancio</button>
+        </form>
+
+        <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+        <p class="privacy-note" data-i18n="newsletter.privacy">
+          Inviando il modulo accetti di ricevere una sola email al momento del lancio.
+          Puoi richiedere la cancellazione in qualsiasi momento.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="" width="28" height="28" aria-hidden="true">
+        <span>PitSpot</span>
+      </div>
+      <p class="copyright">© 2026 PitSpot</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
