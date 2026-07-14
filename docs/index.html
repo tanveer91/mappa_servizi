@@ -4,18 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="PitSpot — trova fontanelle e bagni pubblici sulla mappa, ovunque tu sia. Presto disponibile su Android." data-i18n-content="meta.description">
+  <meta name="keywords" content="PitSpot, fontanelle, bagni pubblici, mappa, app Android, viaggi outdoor, acqua potabile" data-i18n-content="meta.keywords">
+  <meta name="author" content="PitSpot">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="theme-color" content="#F26722">
   <title data-i18n-content="meta.title">PitSpot — La mappa per le tue avventure all'aria aperta</title>
+
+  <link rel="canonical" href="https://www.pitspotapp.com/">
+  <link rel="alternate" hreflang="it" href="https://www.pitspotapp.com/?lang=it">
+  <link rel="alternate" hreflang="en" href="https://www.pitspotapp.com/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://www.pitspotapp.com/">
+  <link rel="alternate" type="text/plain" href="https://www.pitspotapp.com/llms.txt" title="LLM-readable site summary">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PitSpot">
+  <meta property="og:url" content="https://www.pitspotapp.com/">
+  <meta property="og:title" content="PitSpot — La mappa per le tue avventure all'aria aperta" data-i18n-content="meta.title">
+  <meta property="og:description" content="PitSpot — trova fontanelle e bagni pubblici sulla mappa, ovunque tu sia. Presto disponibile su Android." data-i18n-content="meta.description">
+  <meta property="og:image" content="https://www.pitspotapp.com/assets/screenshot.jpg">
+  <meta property="og:image:alt" content="Schermata dell'app PitSpot con mappa e fontanelle" data-i18n-content="hero.screenshotAlt">
+  <meta property="og:locale" content="it_IT" id="og-locale">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PitSpot — La mappa per le tue avventure all'aria aperta" data-i18n-content="meta.title">
+  <meta name="twitter:description" content="PitSpot — trova fontanelle e bagni pubblici sulla mappa, ovunque tu sia. Presto disponibile su Android." data-i18n-content="meta.description">
+  <meta name="twitter:image" content="https://www.pitspotapp.com/assets/screenshot.jpg">
+
   <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json" id="structured-data">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.pitspotapp.com/#organization",
+        "name": "PitSpot",
+        "url": "https://www.pitspotapp.com",
+        "logo": "https://www.pitspotapp.com/assets/logo.png",
+        "description": "PitSpot è l'app gratuita per trovare fontanelle d'acqua potabile e bagni pubblici sulla mappa."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.pitspotapp.com/#website",
+        "name": "PitSpot",
+        "url": "https://www.pitspotapp.com",
+        "inLanguage": ["it-IT", "en-US"],
+        "publisher": { "@id": "https://www.pitspotapp.com/#organization" }
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://www.pitspotapp.com/#app",
+        "name": "PitSpot",
+        "operatingSystem": "Android",
+        "applicationCategory": "TravelApplication",
+        "description": "App mobile gratuita per trovare fontanelle e bagni pubblici sulla mappa.",
+        "url": "https://www.pitspotapp.com",
+        "image": "https://www.pitspotapp.com/assets/screenshot.jpg",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.pitspotapp.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Cos'è PitSpot?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PitSpot è un'app per Android che mostra fontanelle d'acqua potabile e bagni pubblici su una mappa interattiva."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "PitSpot è gratuito?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sì, PitSpot sarà completamente gratuito."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#">
-        <img src="assets/logo.png" alt="PitSpot" width="40" height="40">
+      <a class="brand" href="https://www.pitspotapp.com/" aria-label="PitSpot — Home">
+        <img src="assets/logo.png" alt="Logo PitSpot" width="40" height="40">
         <span>PitSpot</span>
       </a>
 
@@ -29,12 +114,12 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow" data-i18n="hero.eyebrow">Presto su Android</p>
-          <h1 data-i18n="hero.title">La mappa definitiva per i tuoi viaggi all'aria aperta</h1>
+          <h1 id="hero-title" data-i18n="hero.title">La mappa definitiva per i tuoi viaggi all'aria aperta</h1>
           <p class="lead" data-i18n="hero.lead">
             PitSpot ti mostra fontanelle d'acqua potabile e bagni pubblici vicino a te.
             Perfetta per escursioni, city trip e giornate fuori porta.
@@ -56,7 +141,7 @@
           <a class="button primary" href="#newsletter" data-i18n="hero.cta">Iscriviti alla lista d'attesa</a>
         </div>
 
-        <div class="hero-visual" data-i18n-aria-label="hero.visualLabel" aria-label="Anteprima dell'app PitSpot">
+        <figure class="hero-visual" data-i18n-aria-label="hero.visualLabel" aria-label="Anteprima dell'app PitSpot">
           <div class="phone-frame">
             <div class="phone-notch" aria-hidden="true"></div>
             <div class="phone-screen">
@@ -65,17 +150,76 @@
                 alt="Schermata dell'app PitSpot con mappa di Milano, fontanelle e controlli di ricerca"
                 class="app-screenshot"
                 data-i18n-alt="hero.screenshotAlt"
+                width="390"
+                height="844"
+                loading="eager"
+                fetchpriority="high"
               >
             </div>
           </div>
+          <figcaption class="sr-only" data-i18n="hero.screenshotCaption">
+            Anteprima dell'app PitSpot su smartphone con mappa interattiva
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <div class="container about-card">
+        <h2 id="about-title" data-i18n="about.title">Cos'è PitSpot?</h2>
+        <p data-i18n="about.text">
+          PitSpot è un'app mobile gratuita che aiuta viaggiatori, escursionisti e cittadini
+          a trovare fontanelle d'acqua potabile e servizi igienici pubblici sulla mappa.
+          Cerca per indirizzo o usa il GPS per scoprire i punti più vicini a te.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title" data-i18n="faq.title">Domande frequenti</h2>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary data-i18n="faq.q1">Cos'è PitSpot?</summary>
+            <p data-i18n="faq.a1">
+              PitSpot è un'app per Android che mostra fontanelle d'acqua potabile e bagni pubblici
+              su una mappa interattiva, ideale per chi viaggia, fa trekking o esplora la città.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q2">PitSpot è gratuito?</summary>
+            <p data-i18n="faq.a2">
+              Sì, PitSpot sarà completamente gratuito. Nessun abbonamento, nessun costo nascosto.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q3">Quando sarà disponibile l'app?</summary>
+            <p data-i18n="faq.a3">
+              L'app è in arrivo su Android. Iscriviti alla newsletter per ricevere una notifica
+              al momento del lancio ufficiale.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q4">Cosa posso trovare sulla mappa?</summary>
+            <p data-i18n="faq.a4">
+              Puoi trovare fontanelle d'acqua potabile e bagni pubblici, con informazioni su
+              accessibilità, orari di apertura e indirizzo.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q5">Su quali piattaforme sarà disponibile?</summary>
+            <p data-i18n="faq.a5">
+              Il lancio iniziale è previsto su Android. Altre piattaforme potrebbero seguire in futuro.
+            </p>
+          </details>
         </div>
       </div>
     </section>
 
-    <section class="newsletter" id="newsletter">
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
       <div class="container newsletter-card">
         <div class="newsletter-copy">
-          <h2 data-i18n="newsletter.title">Resta aggiornato</h2>
+          <h2 id="newsletter-title" data-i18n="newsletter.title">Resta aggiornato</h2>
           <p data-i18n="newsletter.lead">
             Lascia la tua email per essere avvisato quando l'app sarà disponibile su Android.
             Nessuno spam: solo una notifica al lancio.
@@ -116,7 +260,7 @@
         <img src="assets/logo.png" alt="" width="28" height="28" aria-hidden="true">
         <span>PitSpot</span>
       </div>
-      <p class="copyright">© 2026 PitSpot</p>
+      <p class="copyright">© 2026 PitSpot — <span data-i18n="footer.tagline">App per fontanelle e bagni pubblici</span></p>
     </div>
   </footer>
 

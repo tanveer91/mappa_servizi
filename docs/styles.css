@@ -376,6 +376,83 @@ h1 {
   padding: 1rem 0 4.5rem;
 }
 
+.about {
+  padding: 0 0 2rem;
+}
+
+.about-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: var(--shadow);
+  padding: clamp(1.5rem, 4vw, 2rem);
+}
+
+.about-card h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+.about-card p {
+  margin: 0;
+  color: #5f6669;
+  max-width: 70ch;
+  line-height: 1.7;
+}
+
+.faq {
+  padding: 0 0 2.5rem;
+}
+
+.faq h2 {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.25rem 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.85rem 0;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item p {
+  margin: 0 0 1rem;
+  color: #5f6669;
+  line-height: 1.65;
+}
+
 .newsletter-card {
   background: var(--white);
   border: 1px solid var(--border);

@@ -1,0 +1,51 @@
+# PitSpot
+
+> PitSpot is a free Android mobile app that helps travelers, hikers, and city explorers find drinking water fountains and public toilets on an interactive map.
+
+## About
+
+PitSpot (https://www.pitspotapp.com) is a travel and outdoor utility app coming soon to Android. Users can search by address or GPS to find nearby water fountains and public restrooms, with details on accessibility and opening hours.
+
+## Key Features
+
+- Find drinking water fountains near your location
+- Find public toilets with accessibility and opening hours info
+- Search by address or current GPS position
+- Interactive map interface
+- Free to use, no subscription required
+- Available in Italian and English
+
+## Target Audience
+
+- Hikers and outdoor enthusiasts
+- City travelers and tourists
+- Day trippers and commuters
+- Anyone who needs quick access to water or restrooms while on the go
+
+## FAQ
+
+### What is PitSpot?
+PitSpot is an Android app that shows drinking water fountains and public toilets on an interactive map.
+
+### Is PitSpot free?
+Yes, PitSpot will be completely free with no hidden costs.
+
+### When will the app launch?
+The app is coming soon on Android. Users can sign up at https://www.pitspotapp.com to get notified at launch.
+
+### What can I find on the map?
+Drinking water fountains and public toilets, with accessibility, opening hours, and address details.
+
+### Which platforms are supported?
+Android at launch. Other platforms may follow.
+
+## Links
+
+- Website: https://www.pitspotapp.com
+- Italian version: https://www.pitspotapp.com/?lang=it
+- English version: https://www.pitspotapp.com/?lang=en
+- Sitemap: https://www.pitspotapp.com/sitemap.xml
+
+## Contact
+
+Sign up for launch notifications at https://www.pitspotapp.com/#newsletter
