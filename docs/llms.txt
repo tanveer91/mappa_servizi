@@ -13,7 +13,7 @@ PitSpot (https://www.pitspotapp.com) is a travel and outdoor utility app coming 
 - Search by address or current GPS position
 - Interactive map interface
 - Free to use, no subscription required
-- Available in Italian and English
+- Available in Italian, English, and German
 
 ## Target Audience
 
@@ -44,7 +44,10 @@ Android at launch. Other platforms may follow.
 - Website: https://www.pitspotapp.com
 - Italian version: https://www.pitspotapp.com/?lang=it
 - English version: https://www.pitspotapp.com/?lang=en
+- German version: https://www.pitspotapp.com/?lang=de
 - Sitemap: https://www.pitspotapp.com/sitemap.xml
+- AI summary (IT): https://www.pitspotapp.com/llms-it.txt
+- AI summary (DE): https://www.pitspotapp.com/llms-de.txt
 
 ## Contact
 

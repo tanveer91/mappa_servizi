@@ -1,0 +1,54 @@
+# PitSpot
+
+> PitSpot è un'app mobile gratuita per Android che aiuta viaggiatori, escursionisti e cittadini a trovare fontanelle d'acqua potabile e bagni pubblici su una mappa interattiva.
+
+## Informazioni
+
+PitSpot (https://www.pitspotapp.com) è un'app di utilità per viaggi e attività all'aria aperta, in arrivo su Android. Gli utenti possono cercare per indirizzo o GPS per trovare fontanelle e servizi igienici nelle vicinanze, con dettagli su accessibilità e orari di apertura.
+
+## Funzionalità principali
+
+- Trova fontanelle d'acqua potabile vicino alla tua posizione
+- Trova bagni pubblici con informazioni su accessibilità e orari
+- Ricerca per indirizzo o posizione GPS attuale
+- Interfaccia con mappa interattiva
+- Gratuita, senza abbonamento
+- Disponibile in italiano, inglese e tedesco
+
+## Pubblico di riferimento
+
+- Escursionisti e appassionati di outdoor
+- Viaggiatori e turisti in città
+- Chi fa gite fuori porta o spostamenti quotidiani
+- Chiunque abbia bisogno rapido di acqua o servizi igienici in movimento
+
+## Domande frequenti
+
+### Cos'è PitSpot?
+PitSpot è un'app Android che mostra fontanelle d'acqua potabile e bagni pubblici su una mappa interattiva.
+
+### PitSpot è gratuito?
+Sì, PitSpot sarà completamente gratuito, senza costi nascosti.
+
+### Quando sarà disponibile l'app?
+L'app è in arrivo su Android. Puoi iscriverti su https://www.pitspotapp.com per ricevere una notifica al lancio.
+
+### Cosa posso trovare sulla mappa?
+Fontanelle d'acqua potabile e bagni pubblici, con dettagli su accessibilità, orari e indirizzo.
+
+### Su quali piattaforme sarà disponibile?
+Al lancio su Android. Altre piattaforme potrebbero arrivare in futuro.
+
+## Link
+
+- Sito web: https://www.pitspotapp.com
+- Versione italiana: https://www.pitspotapp.com/?lang=it
+- Versione inglese: https://www.pitspotapp.com/?lang=en
+- Versione tedesca: https://www.pitspotapp.com/?lang=de
+- Sitemap: https://www.pitspotapp.com/sitemap.xml
+- Riepilogo AI (EN): https://www.pitspotapp.com/llms.txt
+- Riepilogo AI (DE): https://www.pitspotapp.com/llms-de.txt
+
+## Contatti
+
+Iscriviti alle notifiche di lancio su https://www.pitspotapp.com/#newsletter

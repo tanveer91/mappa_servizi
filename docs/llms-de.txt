@@ -1,0 +1,54 @@
+# PitSpot
+
+> PitSpot ist eine kostenlose Android-App, die Reisenden, Wanderern und Stadterkundern hilft, Trinkbrunnen und öffentliche Toiletten auf einer interaktiven Karte zu finden.
+
+## Über PitSpot
+
+PitSpot (https://www.pitspotapp.com) ist eine Reise- und Outdoor-App, die bald auf Android erscheint. Nutzer können per Adresse oder GPS Trinkbrunnen und öffentliche Toiletten in der Nähe finden – mit Details zu Barrierefreiheit und Öffnungszeiten.
+
+## Hauptfunktionen
+
+- Trinkbrunnen in deiner Nähe finden
+- Öffentliche Toiletten mit Infos zu Barrierefreiheit und Öffnungszeiten
+- Suche nach Adresse oder aktuellem GPS-Standort
+- Interaktive Kartenoberfläche
+- Kostenlos, ohne Abo
+- Verfügbar auf Italienisch, Englisch und Deutsch
+
+## Zielgruppe
+
+- Wanderer und Outdoor-Fans
+- Städtereisende und Touristen
+- Tagesausflügler und Pendler
+- Alle, die unterwegs schnell Wasser oder Toiletten brauchen
+
+## Häufig gestellte Fragen
+
+### Was ist PitSpot?
+PitSpot ist eine Android-App, die Trinkbrunnen und öffentliche Toiletten auf einer interaktiven Karte anzeigt.
+
+### Ist PitSpot kostenlos?
+Ja, PitSpot wird vollständig kostenlos sein, ohne versteckte Kosten.
+
+### Wann wird die App verfügbar sein?
+Die App kommt bald auf Android. Melde dich auf https://www.pitspotapp.com an, um beim Start benachrichtigt zu werden.
+
+### Was finde ich auf der Karte?
+Trinkbrunnen und öffentliche Toiletten mit Informationen zu Barrierefreiheit, Öffnungszeiten und Adresse.
+
+### Für welche Plattformen ist PitSpot geplant?
+Zuerst Android. Weitere Plattformen könnten später folgen.
+
+## Links
+
+- Website: https://www.pitspotapp.com
+- Italienische Version: https://www.pitspotapp.com/?lang=it
+- Englische Version: https://www.pitspotapp.com/?lang=en
+- Deutsche Version: https://www.pitspotapp.com/?lang=de
+- Sitemap: https://www.pitspotapp.com/sitemap.xml
+- AI-Zusammenfassung (EN): https://www.pitspotapp.com/llms.txt
+- AI-Zusammenfassung (IT): https://www.pitspotapp.com/llms-it.txt
+
+## Kontakt
+
+Für Start-Benachrichtigungen: https://www.pitspotapp.com/#newsletter

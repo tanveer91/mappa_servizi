@@ -1,5 +1,6 @@
 const LANG_STORAGE_KEY = "pitspot-landing-lang";
 const SITE_URL = "https://www.pitspotapp.com";
+const SUPPORTED_LANGS = ["it", "en", "de"];
 
 const translations = {
   it: {
@@ -9,6 +10,9 @@ const translations = {
     "meta.keywords":
       "PitSpot, fontanelle, bagni pubblici, mappa, app Android, acqua potabile, viaggi outdoor, servizi igienici, escursioni",
     "lang.groupLabel": "Lingua",
+    "lang.italian": "Italiano",
+    "lang.english": "Inglese",
+    "lang.german": "Tedesco",
     "header.cta": "Avvisami al lancio",
     "hero.eyebrow": "Presto su Android",
     "hero.title": "La mappa definitiva per i tuoi viaggi all'aria aperta",
@@ -63,6 +67,9 @@ const translations = {
     "meta.keywords":
       "PitSpot, water fountains, public toilets, map app, Android app, drinking water, outdoor travel, restrooms, hiking",
     "lang.groupLabel": "Language",
+    "lang.italian": "Italian",
+    "lang.english": "English",
+    "lang.german": "German",
     "header.cta": "Notify me at launch",
     "hero.eyebrow": "Coming soon on Android",
     "hero.title": "The ultimate map for your outdoor adventures",
@@ -109,6 +116,62 @@ const translations = {
     "form.error": "Something went wrong. Please try again shortly.",
     "form.submitFailed": "Submission failed.",
   },
+  de: {
+    "meta.title": "PitSpot — Die Karte für Trinkbrunnen und öffentliche Toiletten",
+    "meta.description":
+      "PitSpot ist die kostenlose App, um Trinkbrunnen und öffentliche Toiletten auf der Karte zu finden. Ideal für Reisen, Wanderungen und Tage im Freien. Bald auf Android.",
+    "meta.keywords":
+      "PitSpot, Trinkbrunnen, öffentliche Toiletten, Karte, Android App, Trinkwasser, Outdoor-Reisen, Wanderungen, Sanitäranlagen",
+    "lang.groupLabel": "Sprache",
+    "lang.italian": "Italienisch",
+    "lang.english": "Englisch",
+    "lang.german": "Deutsch",
+    "header.cta": "Beim Start benachrichtigen",
+    "hero.eyebrow": "Bald auf Android",
+    "hero.title": "Die ultimative Karte für deine Outdoor-Abenteuer",
+    "hero.lead":
+      "PitSpot zeigt dir Trinkbrunnen und öffentliche Toiletten in deiner Nähe. Perfekt für Wanderungen, Städtetrips und Tage im Freien.",
+    "hero.feature1": "Trinkbrunnen und Wasserstellen in der Nähe",
+    "hero.feature2": "Öffentliche Toiletten mit Details zu Barrierefreiheit und Öffnungszeiten",
+    "hero.feature3": "Suche nach Adresse oder aktuellem GPS-Standort",
+    "hero.cta": "Auf die Warteliste setzen",
+    "hero.visualLabel": "PitSpot App-Vorschau",
+    "hero.screenshotAlt":
+      "PitSpot App-Screenshot mit Karte von Mailand, Trinkbrunnen und Suchsteuerung",
+    "hero.screenshotCaption": "PitSpot App-Vorschau auf dem Smartphone mit interaktiver Karte",
+    "about.title": "Was ist PitSpot?",
+    "about.text":
+      "PitSpot ist eine kostenlose mobile App, die Reisenden, Wanderern und Stadterkundern hilft, Trinkbrunnen und öffentliche Toiletten auf der Karte zu finden. Suche nach Adresse oder nutze GPS, um die nächsten Punkte zu entdecken.",
+    "faq.title": "Häufig gestellte Fragen",
+    "faq.q1": "Was ist PitSpot?",
+    "faq.a1":
+      "PitSpot ist eine Android-App, die Trinkbrunnen und öffentliche Toiletten auf einer interaktiven Karte anzeigt – ideal für Reisende, Wanderer und Stadterkunder.",
+    "faq.q2": "Ist PitSpot kostenlos?",
+    "faq.a2": "Ja, PitSpot wird vollständig kostenlos sein. Kein Abo, keine versteckten Kosten.",
+    "faq.q3": "Wann wird die App verfügbar sein?",
+    "faq.a3":
+      "Die App kommt bald auf Android. Melde dich für den Newsletter an, um beim offiziellen Start benachrichtigt zu werden.",
+    "faq.q4": "Was finde ich auf der Karte?",
+    "faq.a4":
+      "Du findest Trinkbrunnen und öffentliche Toiletten mit Informationen zu Barrierefreiheit, Öffnungszeiten und Adresse.",
+    "faq.q5": "Für welche Plattformen ist PitSpot geplant?",
+    "faq.a5": "Der erste Start ist für Android geplant. Weitere Plattformen könnten später folgen.",
+    "newsletter.title": "Bleib auf dem Laufenden",
+    "newsletter.lead":
+      "Hinterlasse deine E-Mail, um benachrichtigt zu werden, wenn die App auf Android verfügbar ist. Kein Spam – nur eine Benachrichtigung beim Start.",
+    "newsletter.emailLabel": "E-Mail",
+    "newsletter.emailPlaceholder": "deine@email.com",
+    "newsletter.submit": "Beim Start benachrichtigen",
+    "newsletter.privacy":
+      "Mit dem Absenden des Formulars stimmst du zu, eine einzelne E-Mail beim App-Start zu erhalten. Du kannst die Löschung jederzeit anfordern.",
+    "footer.tagline": "App für Trinkbrunnen und öffentliche Toiletten",
+    "form.configError":
+      "Konfiguriere zuerst das Formular: Ersetze YOUR_FORM_ID in index.html durch deine Formspree-ID.",
+    "form.sending": "Wird gesendet...",
+    "form.success": "Perfekt! Wir benachrichtigen dich, wenn PitSpot auf Android verfügbar ist.",
+    "form.error": "Etwas ist schiefgelaufen. Bitte versuche es später erneut.",
+    "form.submitFailed": "Senden fehlgeschlagen.",
+  },
 };
 
 let currentLang = "it";
@@ -120,17 +183,19 @@ function t(key) {
 function detectLanguage() {
   const params = new URLSearchParams(window.location.search);
   const urlLang = params.get("lang");
-  if (urlLang === "it" || urlLang === "en") {
+  if (SUPPORTED_LANGS.includes(urlLang)) {
     return urlLang;
   }
 
   const saved = localStorage.getItem(LANG_STORAGE_KEY);
-  if (saved === "it" || saved === "en") {
+  if (SUPPORTED_LANGS.includes(saved)) {
     return saved;
   }
 
   const browserLang = (navigator.language || "it").toLowerCase();
-  return browserLang.startsWith("en") ? "en" : "it";
+  if (browserLang.startsWith("de")) return "de";
+  if (browserLang.startsWith("en")) return "en";
+  return "it";
 }
 
 function updateStructuredData() {
@@ -153,7 +218,7 @@ function updateStructuredData() {
         "@id": `${SITE_URL}/#website`,
         name: "PitSpot",
         url: SITE_URL,
-        inLanguage: ["it-IT", "en-US"],
+        inLanguage: ["it-IT", "en-US", "de-DE"],
         publisher: { "@id": `${SITE_URL}/#organization` },
         description: t("meta.description"),
       },
@@ -234,8 +299,15 @@ function applyLanguage(lang) {
 
   const ogLocale = document.getElementById("og-locale");
   if (ogLocale) {
-    ogLocale.setAttribute("content", lang === "it" ? "it_IT" : "en_US");
+    const localeMap = { it: "it_IT", en: "en_US", de: "de_DE" };
+    ogLocale.setAttribute("content", localeMap[lang] || "it_IT");
   }
+
+  const langLabels = {
+    it: t("lang.italian"),
+    en: t("lang.english"),
+    de: t("lang.german"),
+  };
 
   const langGroup = document.querySelector(".lang-switch");
   if (langGroup) {
@@ -243,9 +315,11 @@ function applyLanguage(lang) {
   }
 
   document.querySelectorAll(".lang-btn").forEach((button) => {
-    const isActive = button.dataset.lang === lang;
+    const buttonLang = button.dataset.lang;
+    const isActive = buttonLang === lang;
     button.classList.toggle("active", isActive);
     button.setAttribute("aria-pressed", String(isActive));
+    button.setAttribute("aria-label", langLabels[buttonLang] || buttonLang);
   });
 
   updateStructuredData();
@@ -258,7 +332,7 @@ function applyLanguage(lang) {
 document.querySelectorAll(".lang-btn").forEach((button) => {
   button.addEventListener("click", () => {
     const lang = button.dataset.lang;
-    if (lang === "it" || lang === "en") {
+    if (SUPPORTED_LANGS.includes(lang)) {
       applyLanguage(lang);
     }
   });

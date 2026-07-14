@@ -14,8 +14,11 @@
   <link rel="canonical" href="https://www.pitspotapp.com/">
   <link rel="alternate" hreflang="it" href="https://www.pitspotapp.com/?lang=it">
   <link rel="alternate" hreflang="en" href="https://www.pitspotapp.com/?lang=en">
+  <link rel="alternate" hreflang="de" href="https://www.pitspotapp.com/?lang=de">
   <link rel="alternate" hreflang="x-default" href="https://www.pitspotapp.com/">
-  <link rel="alternate" type="text/plain" href="https://www.pitspotapp.com/llms.txt" title="LLM-readable site summary">
+  <link rel="alternate" type="text/plain" href="https://www.pitspotapp.com/llms.txt" hreflang="en" title="LLM-readable site summary (English)">
+  <link rel="alternate" type="text/plain" href="https://www.pitspotapp.com/llms-it.txt" hreflang="it" title="Riepilogo sito per LLM (Italiano)">
+  <link rel="alternate" type="text/plain" href="https://www.pitspotapp.com/llms-de.txt" hreflang="de" title="LLM-Zusammenfassung (Deutsch)">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="PitSpot">
@@ -26,6 +29,7 @@
   <meta property="og:image:alt" content="Schermata dell'app PitSpot con mappa e fontanelle" data-i18n-content="hero.screenshotAlt">
   <meta property="og:locale" content="it_IT" id="og-locale">
   <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="PitSpot — La mappa per le tue avventure all'aria aperta" data-i18n-content="meta.title">
@@ -56,7 +60,7 @@
         "@id": "https://www.pitspotapp.com/#website",
         "name": "PitSpot",
         "url": "https://www.pitspotapp.com",
-        "inLanguage": ["it-IT", "en-US"],
+        "inLanguage": ["it-IT", "en-US", "de-DE"],
         "publisher": { "@id": "https://www.pitspotapp.com/#organization" }
       },
       {
@@ -106,8 +110,37 @@
 
       <div class="header-actions">
         <div class="lang-switch" role="group" aria-label="Language">
-          <button type="button" class="lang-btn" data-lang="it" aria-pressed="true">IT</button>
-          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" class="lang-btn active" data-lang="it" aria-pressed="true" aria-label="Italiano">
+            <span class="flag-badge" aria-hidden="true">
+              <svg class="flag-svg" viewBox="0 0 3 2" role="img" aria-hidden="true">
+                <rect width="1" height="2" fill="#009246"></rect>
+                <rect x="1" width="1" height="2" fill="#ffffff"></rect>
+                <rect x="2" width="1" height="2" fill="#CE2B37"></rect>
+              </svg>
+            </span>
+          </button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" aria-label="English">
+            <span class="flag-badge" aria-hidden="true">
+              <svg class="flag-svg" viewBox="0 0 60 40" role="img" aria-hidden="true">
+                <rect width="60" height="40" fill="#012169"></rect>
+                <path d="M0,0 L60,40 M60,0 L0,40" stroke="#ffffff" stroke-width="8"></path>
+                <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" stroke-width="4"></path>
+                <rect x="24" width="12" height="40" fill="#ffffff"></rect>
+                <rect y="14" width="60" height="12" fill="#ffffff"></rect>
+                <rect x="26" width="8" height="40" fill="#C8102E"></rect>
+                <rect y="16" width="60" height="8" fill="#C8102E"></rect>
+              </svg>
+            </span>
+          </button>
+          <button type="button" class="lang-btn" data-lang="de" aria-pressed="false" aria-label="Deutsch">
+            <span class="flag-badge" aria-hidden="true">
+              <svg class="flag-svg" viewBox="0 0 3 2" role="img" aria-hidden="true">
+                <rect width="3" height="0.667" fill="#000000"></rect>
+                <rect y="0.667" width="3" height="0.667" fill="#DD0000"></rect>
+                <rect y="1.333" width="3" height="0.667" fill="#FFCE00"></rect>
+              </svg>
+            </span>
+          </button>
         </div>
         <a class="header-cta" href="#newsletter" data-i18n="header.cta">Avvisami al lancio</a>
       </div>
