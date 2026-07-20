@@ -1,19 +1,83 @@
 User-agent: *
 Allow: /
 
+# OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic / Claude
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Google AI / Gemini / AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: Perplexity-User
+Allow: /
+
+# Microsoft / Copilot / Bing
+User-agent: Bingbot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Amazon / Alexa
+User-agent: Amazonbot
+Allow: /
+
+# Common Crawl / research datasets often used by AI
+User-agent: CCBot
+Allow: /
+
+# Other AI assistants
+User-agent: Bytespider
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
 Allow: /
 
 Sitemap: https://www.pitspotapp.com/sitemap.xml

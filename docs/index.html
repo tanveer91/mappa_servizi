@@ -3,38 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PitSpot — trova fontanelle e bagni pubblici sulla mappa, ovunque tu sia. Presto disponibile su Android." data-i18n-content="meta.description">
-  <meta name="keywords" content="PitSpot, fontanelle, bagni pubblici, mappa, app Android, viaggi outdoor, acqua potabile" data-i18n-content="meta.keywords">
+  <meta name="description" content="PitSpot è l'app gratuita per trovare fontanelle d'acqua potabile e bagni pubblici sulla mappa. Ideale per viaggi, escursioni e giornate outdoor. Presto su Android." data-i18n-content="meta.description">
+  <meta name="keywords" content="PitSpot, fontanelle, bagni pubblici, mappa, app Android, acqua potabile, viaggi outdoor, servizi igienici, escursioni, refill water" data-i18n-content="meta.keywords">
   <meta name="author" content="PitSpot">
+  <meta name="application-name" content="PitSpot">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <meta name="googlebot" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="bingbot" content="index, follow">
   <meta name="theme-color" content="#F26722">
-  <title data-i18n-content="meta.title">PitSpot — La mappa per le tue avventure all'aria aperta</title>
+  <meta name="format-detection" content="telephone=no">
+  <title data-i18n-content="meta.title">PitSpot — App gratuita per fontanelle e bagni pubblici sulla mappa</title>
 
-  <link rel="canonical" href="https://www.pitspotapp.com/">
+  <link rel="canonical" href="https://www.pitspotapp.com/" id="canonical-link">
   <link rel="alternate" hreflang="it" href="https://www.pitspotapp.com/?lang=it">
   <link rel="alternate" hreflang="en" href="https://www.pitspotapp.com/?lang=en">
   <link rel="alternate" hreflang="de" href="https://www.pitspotapp.com/?lang=de">
   <link rel="alternate" hreflang="x-default" href="https://www.pitspotapp.com/">
+  <link rel="alternate" type="text/plain" href="https://www.pitspotapp.com/ai.txt" title="AI discovery index">
   <link rel="alternate" type="text/plain" href="https://www.pitspotapp.com/llms.txt" hreflang="en" title="LLM-readable site summary (English)">
   <link rel="alternate" type="text/plain" href="https://www.pitspotapp.com/llms-it.txt" hreflang="it" title="Riepilogo sito per LLM (Italiano)">
   <link rel="alternate" type="text/plain" href="https://www.pitspotapp.com/llms-de.txt" hreflang="de" title="LLM-Zusammenfassung (Deutsch)">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="PitSpot">
-  <meta property="og:url" content="https://www.pitspotapp.com/">
-  <meta property="og:title" content="PitSpot — La mappa per le tue avventure all'aria aperta" data-i18n-content="meta.title">
-  <meta property="og:description" content="PitSpot — trova fontanelle e bagni pubblici sulla mappa, ovunque tu sia. Presto disponibile su Android." data-i18n-content="meta.description">
+  <meta property="og:url" content="https://www.pitspotapp.com/" id="og-url">
+  <meta property="og:title" content="PitSpot — App gratuita per fontanelle e bagni pubblici sulla mappa" data-i18n-content="meta.title">
+  <meta property="og:description" content="PitSpot è l'app gratuita per trovare fontanelle d'acqua potabile e bagni pubblici sulla mappa. Ideale per viaggi, escursioni e giornate outdoor. Presto su Android." data-i18n-content="meta.description">
   <meta property="og:image" content="https://www.pitspotapp.com/assets/screenshot.jpg">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="1920">
   <meta property="og:image:alt" content="Schermata dell'app PitSpot con mappa e fontanelle" data-i18n-content="hero.screenshotAlt">
   <meta property="og:locale" content="it_IT" id="og-locale">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:locale:alternate" content="de_DE">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PitSpot — La mappa per le tue avventure all'aria aperta" data-i18n-content="meta.title">
-  <meta name="twitter:description" content="PitSpot — trova fontanelle e bagni pubblici sulla mappa, ovunque tu sia. Presto disponibile su Android." data-i18n-content="meta.description">
+  <meta name="twitter:title" content="PitSpot — App gratuita per fontanelle e bagni pubblici sulla mappa" data-i18n-content="meta.title">
+  <meta name="twitter:description" content="PitSpot è l'app gratuita per trovare fontanelle d'acqua potabile e bagni pubblici sulla mappa. Ideale per viaggi, escursioni e giornate outdoor. Presto su Android." data-i18n-content="meta.description">
   <meta name="twitter:image" content="https://www.pitspotapp.com/assets/screenshot.jpg">
+  <meta name="twitter:image:alt" content="Schermata dell'app PitSpot con mappa e fontanelle" data-i18n-content="hero.screenshotAlt">
 
   <link rel="icon" href="assets/logo.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/logo.png">
@@ -52,8 +59,16 @@
         "@id": "https://www.pitspotapp.com/#organization",
         "name": "PitSpot",
         "url": "https://www.pitspotapp.com",
-        "logo": "https://www.pitspotapp.com/assets/logo.png",
-        "description": "PitSpot è l'app gratuita per trovare fontanelle d'acqua potabile e bagni pubblici sulla mappa."
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.pitspotapp.com/assets/logo.png"
+        },
+        "description": "PitSpot è l'app gratuita per trovare fontanelle d'acqua potabile e bagni pubblici sulla mappa.",
+        "sameAs": [
+          "https://www.pitspotapp.com/llms.txt",
+          "https://www.pitspotapp.com/llms-it.txt",
+          "https://www.pitspotapp.com/llms-de.txt"
+        ]
       },
       {
         "@type": "WebSite",
@@ -61,18 +76,72 @@
         "name": "PitSpot",
         "url": "https://www.pitspotapp.com",
         "inLanguage": ["it-IT", "en-US", "de-DE"],
-        "publisher": { "@id": "https://www.pitspotapp.com/#organization" }
+        "publisher": { "@id": "https://www.pitspotapp.com/#organization" },
+        "description": "Landing page ufficiale di PitSpot, app per fontanelle e bagni pubblici."
       },
       {
-        "@type": "MobileApplication",
+        "@type": "WebPage",
+        "@id": "https://www.pitspotapp.com/#webpage",
+        "url": "https://www.pitspotapp.com/",
+        "name": "PitSpot — App gratuita per fontanelle e bagni pubblici sulla mappa",
+        "isPartOf": { "@id": "https://www.pitspotapp.com/#website" },
+        "about": { "@id": "https://www.pitspotapp.com/#app" },
+        "inLanguage": ["it-IT", "en-US", "de-DE"],
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.pitspotapp.com/assets/screenshot.jpg"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["#hero-title", ".lead", "#about-title", ".about-card p"]
+        }
+      },
+      {
+        "@type": ["MobileApplication", "SoftwareApplication"],
         "@id": "https://www.pitspotapp.com/#app",
         "name": "PitSpot",
         "operatingSystem": "Android",
         "applicationCategory": "TravelApplication",
-        "description": "App mobile gratuita per trovare fontanelle e bagni pubblici sulla mappa.",
+        "applicationSubCategory": "Maps",
+        "description": "App mobile gratuita per trovare fontanelle d'acqua potabile e bagni pubblici sulla mappa.",
         "url": "https://www.pitspotapp.com",
         "image": "https://www.pitspotapp.com/assets/screenshot.jpg",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+        "inLanguage": ["it", "en", "de"],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/PreOrder"
+        },
+        "featureList": [
+          "Fontanelle e punti d'acqua nelle vicinanze",
+          "Bagni pubblici con dettagli su accessibilità e orari",
+          "Ricerca per indirizzo o posizione GPS attuale"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.pitspotapp.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.pitspotapp.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "FAQ",
+            "item": "https://www.pitspotapp.com/#faq"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Newsletter",
+            "item": "https://www.pitspotapp.com/#newsletter"
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -91,7 +160,39 @@
             "name": "PitSpot è gratuito?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sì, PitSpot sarà completamente gratuito."
+              "text": "Sì, PitSpot sarà completamente gratuito. Nessun abbonamento, nessun costo nascosto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quando sarà disponibile l'app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L'app è in arrivo su Android. Iscriviti alla newsletter per ricevere una notifica al momento del lancio ufficiale."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cosa posso trovare sulla mappa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puoi trovare fontanelle d'acqua potabile e bagni pubblici, con informazioni su accessibilità, orari di apertura e indirizzo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Su quali piattaforme sarà disponibile?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Il lancio iniziale è previsto su Android. Altre piattaforme potrebbero seguire in futuro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In quali lingue è disponibile PitSpot?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PitSpot è disponibile in italiano, inglese e tedesco."
             }
           }
         ]
@@ -208,6 +309,21 @@
       </div>
     </section>
 
+    <section class="use-cases" id="use-cases" aria-labelledby="use-cases-title">
+      <div class="container">
+        <h2 id="use-cases-title" data-i18n="usecases.title">A chi è utile PitSpot</h2>
+        <p class="use-cases-lead" data-i18n="usecases.lead">
+          Un'app pensata per chi si muove all'aperto e in città e vuole acqua e servizi igienici senza stress.
+        </p>
+        <ul class="use-cases-list">
+          <li data-i18n="usecases.item1">Escursioni e trekking: trova fontanelle lungo il percorso</li>
+          <li data-i18n="usecases.item2">City trip e turismo: individua bagni pubblici in centro</li>
+          <li data-i18n="usecases.item3">Giornate fuori porta: riempi la borraccia invece di comprare plastica</li>
+          <li data-i18n="usecases.item4">Viaggi in famiglia: localizza servizi igienici con info su accessibilità</li>
+        </ul>
+      </div>
+    </section>
+
     <section class="faq" id="faq" aria-labelledby="faq-title">
       <div class="container">
         <h2 id="faq-title" data-i18n="faq.title">Domande frequenti</h2>
@@ -245,6 +361,12 @@
               Il lancio iniziale è previsto su Android. Altre piattaforme potrebbero seguire in futuro.
             </p>
           </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q6">In quali lingue è disponibile PitSpot?</summary>
+            <p data-i18n="faq.a6">
+              PitSpot è disponibile in italiano, inglese e tedesco.
+            </p>
+          </details>
         </div>
       </div>
     </section>
@@ -265,6 +387,16 @@
           action="https://formspree.io/f/xpqvanda"
           method="POST"
         >
+          <!-- Honeypot anti-bot (nascosto agli utenti reali) -->
+          <input
+            type="text"
+            name="_gotcha"
+            class="honeypot"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          >
+
           <label class="sr-only" for="email" data-i18n="newsletter.emailLabel">Email</label>
           <input
             type="email"
@@ -275,7 +407,54 @@
             required
             autocomplete="email"
           >
-          <button type="submit" class="button primary" data-i18n="newsletter.submit">Avvisami al lancio</button>
+
+          <button type="submit" class="button primary" id="signup-submit" data-i18n="newsletter.submit">
+            Avvisami al lancio
+          </button>
+
+          <div class="captcha-panel" id="captcha-panel" hidden>
+            <p class="captcha-label" data-i18n="captcha.label">
+              Digita i caratteri dell'immagine per confermare che non sei un bot:
+            </p>
+            <div class="captcha-visual">
+              <canvas
+                id="captcha-canvas"
+                width="240"
+                height="72"
+                role="img"
+                data-i18n-aria-label="captcha.imageAlt"
+                aria-label="Immagine di verifica anti-spam"
+              ></canvas>
+              <button
+                type="button"
+                class="captcha-refresh"
+                id="captcha-refresh"
+                data-i18n-aria-label="captcha.refresh"
+                aria-label="Nuova immagine"
+              >
+                ↻
+              </button>
+            </div>
+            <label class="sr-only" for="captcha-answer" data-i18n="captcha.inputLabel">Codice di verifica</label>
+            <input
+              type="text"
+              id="captcha-answer"
+              name="captcha"
+              inputmode="text"
+              autocomplete="off"
+              spellcheck="false"
+              maxlength="6"
+              placeholder="ABC12"
+              data-i18n-placeholder="captcha.placeholder"
+              aria-describedby="captcha-hint"
+            >
+            <p class="captcha-hint" id="captcha-hint" data-i18n="captcha.hint">
+              Distingui maiuscole e minuscole non è necessario. Puoi aggiornare l'immagine con ↻.
+            </p>
+            <button type="button" class="button primary captcha-confirm" id="captcha-confirm" data-i18n="captcha.confirm">
+              Conferma e iscriviti
+            </button>
+          </div>
         </form>
 
         <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
@@ -298,5 +477,14 @@
   </footer>
 
   <script src="script.js"></script>
+  <noscript>
+    <div class="container" style="padding:2rem 1rem;max-width:760px;margin:0 auto;font-family:sans-serif;line-height:1.6">
+      <h1>PitSpot</h1>
+      <p><strong>IT:</strong> App gratuita per trovare fontanelle d'acqua potabile e bagni pubblici sulla mappa. Presto su Android. <a href="https://www.pitspotapp.com/?lang=it">Versione italiana</a></p>
+      <p><strong>EN:</strong> Free app to find drinking water fountains and public toilets on the map. Coming soon on Android. <a href="https://www.pitspotapp.com/?lang=en">English version</a></p>
+      <p><strong>DE:</strong> Kostenlose App zum Finden von Trinkbrunnen und öffentlichen Toiletten auf der Karte. Bald auf Android. <a href="https://www.pitspotapp.com/?lang=de">Deutsche Version</a></p>
+      <p>AI summaries: <a href="https://www.pitspotapp.com/llms.txt">EN</a> · <a href="https://www.pitspotapp.com/llms-it.txt">IT</a> · <a href="https://www.pitspotapp.com/llms-de.txt">DE</a> · <a href="https://www.pitspotapp.com/ai.txt">ai.txt</a></p>
+    </div>
+  </noscript>
 </body>
 </html>

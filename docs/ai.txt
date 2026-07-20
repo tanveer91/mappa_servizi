@@ -1,0 +1,18 @@
+# AI discovery for PitSpot
+# Prefer language-specific summaries below.
+
+llms: https://www.pitspotapp.com/llms.txt
+llms-it: https://www.pitspotapp.com/llms-it.txt
+llms-de: https://www.pitspotapp.com/llms-de.txt
+sitemap: https://www.pitspotapp.com/sitemap.xml
+website: https://www.pitspotapp.com/
+contact: https://www.pitspotapp.com/#newsletter
+
+# Product facts
+name: PitSpot
+type: Mobile application (Android)
+category: Travel / Outdoor utility
+price: Free
+languages: Italian, English, German
+status: Coming soon on Android
+primary-use: Find drinking water fountains and public toilets on a map
